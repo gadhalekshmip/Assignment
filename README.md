@@ -12,8 +12,8 @@ Implementation of Vision Transformer (ViT) for CIFAR-10 classification achieving
 
 1. Open `q1.ipynb` in Google Colab
 2. Set runtime to GPU (Runtime → Change runtime type → T4 GPU)
-3. Run all cells sequentially
-4. The notebook automatically downloads CIFAR-10 and trains the model
+3. Download the trained model weights and set the path
+4. Run all cells sequentially
 
 ### Pre-trained Model
 
@@ -60,15 +60,6 @@ Download the trained model weights:
 | Ship | 88.9% |
 | Truck | 88.9% |
 
-### Analysis
-
-**Patch Size**: 4×4 patches optimal for CIFAR-10's 32×32 resolution. Larger patches (8×8, 16×16) discard too much spatial detail.
-
-**Overfitting**: 10% train-test gap (94% train vs 84% test) indicates overfitting, common for ViT on small datasets. Heavy augmentation was necessary to reach 84%.
-
-**Architecture Choices**: 8-layer transformer with 384-dim embeddings balanced capacity and overfitting. Deeper models (12+ layers) overfit more without improving test accuracy.
-
-**Limitations**: CIFAR-10's 50k images is small for transformers, which typically require large datasets. Pre-training on ImageNet would likely improve results significantly.
 
 ---
 
