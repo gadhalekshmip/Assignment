@@ -18,7 +18,7 @@ Implementation of Vision Transformer (ViT) for CIFAR-10 classification achieving
 ### Pre-trained Model
 
 Download the trained model weights:
-- **GitHub Release**: [Download vit_cifar10_best.pth](https://github.com/gadhalekshmip/yourrepo/releases/download/v1.0/vit_cifar10_best.pth) (57MB)
+- **GitHub Release**: [Download vit_cifar10_best.pth](https://github.com/gadhalekshmip/Assignment/releases/download/model/best_model.pth)
 - **Google Drive**: [Download Link](https://drive.google.com/file/d/1Al61Qw3zq3xRy116OCC6j4QWUG2TQXFG/view?usp=sharing)
 
 ### Model Configuration
